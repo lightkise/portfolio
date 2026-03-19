@@ -1,0 +1,100 @@
+:root {
+  --green: #2d7a4f;
+  --green-light: #e8f5ee;
+  --green-border: #a8d5b8;
+}
+
+.green-sub { color: var(--green) !important; }
+
+.tag-green { background: #e8f5ee; color: #1e5c38; }
+
+.green-banner {
+  background: var(--white);
+  border: 1px solid var(--green-border);
+  border-left: 4px solid var(--green);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.6rem 2rem;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.green-banner .project-banner-title { color: var(--black); }
+.green-banner .project-banner-role { color: #555; }
+
+.green-heading::before {
+  background: var(--green) !important;
+}
+
+.detail-list li {
+  border-left-color: var(--green) !important;
+}
+
+.detail-list li strong { color: var(--black); }
+/* 证明材料图片网格 */
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.proof-card {
+  border: 1px solid var(--green-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proof-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(45,122,79,0.12);
+}
+
+.proof-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.proof-label {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.82rem;
+  color: var(--green);
+  background: var(--green-light);
+  text-align: center;
+}
+
+/* 放大灯箱 */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox.active { display: flex; }
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.lightbox-close:hover { opacity: 1; }

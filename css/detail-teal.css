@@ -1,0 +1,158 @@
+:root {
+  --teal: #0e9e8e;
+  --teal-light: #e0f7f5;
+  --teal-border: #7dd4cc;
+}
+
+.teal-sub { color: var(--teal) !important; }
+
+.tag-teal-hero { background: #e0f7f5; color: #0a7a6e; }
+
+.teal-banner {
+  background: var(--white);
+  border: 1px solid var(--teal-border);
+  border-left: 4px solid var(--teal);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.6rem 2rem;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.teal-banner .project-banner-title { color: var(--black); }
+.teal-banner .project-banner-role { color: #555; }
+
+.teal-heading::before { background: var(--teal) !important; }
+
+.detail-list li { border-left-color: var(--teal) !important; }
+.detail-list li strong { color: var(--black); }
+
+.teal-metric .metric-num { color: var(--teal) !important; }
+
+/* 流程图 */
+.flow-list { display: flex; flex-direction: column; gap: 0; }
+
+.flow-item { display: flex; align-items: stretch; gap: 16px; }
+
+.flow-left {
+  display: flex; flex-direction: column;
+  align-items: center; width: 48px; flex-shrink: 0;
+}
+
+.flow-num {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--teal-light); border: 2px solid var(--teal);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 700; color: var(--teal); flex-shrink: 0;
+}
+
+.flow-num.last {
+  background: var(--teal); color: #fff;
+}
+
+.flow-line {
+  width: 2px; background: var(--teal-border);
+  flex: 1; margin: 4px 0;
+}
+
+.flow-content {
+  background: var(--teal-light);
+  border: 1px solid var(--teal-border);
+  border-radius: var(--radius);
+  padding: 14px 16px; flex: 1; margin-bottom: 8px;
+}
+
+.flow-content.last {
+  background: var(--teal); border-color: var(--teal);
+}
+
+.flow-title {
+  font-size: 0.9rem; font-weight: 600;
+  color: var(--teal); margin-bottom: 4px;
+}
+
+.flow-title.last { color: #fff; }
+
+.flow-desc { font-size: 0.85rem; color: #555; line-height: 1.6; }
+.flow-desc.last { color: #c8f0ec; }
+
+.flow-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+
+.flow-tag {
+  font-size: 11px; padding: 2px 8px;
+  background: #fff; border: 1px solid var(--teal-border);
+  border-radius: 100px; color: var(--teal);
+}
+
+.flow-tag.last {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.3); color: #fff;
+}
+
+/* App 工具矩阵 */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.app-card {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 8px;
+  padding: 1rem 0.5rem;
+  background: var(--teal-light);
+  border: 1px solid var(--teal-border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.app-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+}
+
+.app-name { font-size: 0.8rem; font-weight: 500; color: var(--black); }
+.app-desc { font-size: 0.72rem; color: var(--gray); }
+
+/* 截图网格 */
+.chat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.chat-card {
+  border: 1px solid var(--teal-border);
+  border-radius: var(--radius); overflow: hidden;
+  cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(14,158,142,0.12);
+}
+
+.chat-card img {
+  width: 100%; height: 200px;
+  object-fit: cover; object-position: top; display: block;
+}
+
+.chat-label {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.82rem; color: var(--teal);
+  background: var(--teal-light); text-align: center;
+}
+
+/* 灯箱 */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88); z-index: 1000;
+  align-items: center; justify-content: center; padding: 2rem;
+}
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 92%; max-height: 92vh; border-radius: 8px; object-fit: contain; }
+.lightbox-close {
+  position: fixed; top: 1.5rem; right: 2rem;
+  color: #fff; font-size: 1.5rem; cursor: pointer;
+  opacity: 0.7; transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }

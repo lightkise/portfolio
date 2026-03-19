@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СПЕЦМАРКЕТ · 仇一妃</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link rel="stylesheet" href="../css/detail-brown.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">← 个人简历</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#internship">实习经历</a></li>
+      <li><a href="../index.html#projects">项目经历</a></li>
+      <li><a href="../index.html#contact">联系我</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-hero bg-light">
+    <div class="detail-hero-inner">
+      <div class="detail-tag-row">
+        <span class="exp-tag tag-brown">国际业务</span>
+        <span class="exp-date">2024.09 — 2025.01</span>
+      </div>
+      <h1>ООО «СПЕЦМАРКЕТ»</h1>
+      <p class="detail-sub brown-sub">国际业务发展实习生 · 远程</p>
+      <div class="project-banner">
+        <h2 class="project-banner-title">三语询盘处理与兼职团队协助</h2>
+        <p class="project-banner-role">以远程弹性形式参与，学业冲刺期间兼顾</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-inner">
+
+      <div class="detail-section">
+        <h2 class="section-heading brown-heading"><span>涉及技能</span></h2>
+        <div class="badge-row">
+          <span class="badge">中英俄三语沟通</span>
+          <span class="badge">询盘处理</span>
+          <span class="badge">文档归档</span>
+          <span class="badge">简历筛选</span>
+          <span class="badge">远程协作</span>
+          <span class="badge">跨文化沟通</span>
+          <span class="badge">资源渠道运营</span>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading brown-heading"><span>工作背景</span></h2>
+        <p class="detail-p">该段经历以远程弹性形式参与，彼时正值硕士论文冲刺阶段，全力备战优秀毕业生评定。远程办公模式使我在保证学业进度的同时，积累了国际化业务协助经验，也进一步强化了在莫斯科留学期间积累的跨文化沟通与资源整合能力。</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading brown-heading"><span>工作内容</span></h2>
+        <ul class="detail-list">
+          <li>
+            <strong>三语询盘处理</strong>
+            以远程形式接收并整理中 / 俄 / 英三语业务询盘，负责翻译转达、回复跟进及记录归档，确保沟通节点清晰可追溯
+          </li>
+          <li>
+            <strong>兼职团队招募协助</strong>
+            公司需扩充中俄翻译兼职人员，依托在莫斯科留学期间积累的留学生群、物流群等本地渠道资源，精准发布招募信息，相比平台发布效率更高；协助收集简历、初步筛选语言能力与时间匹配度，整理结果转交负责人，最终协助确定候选人
+          </li>
+          <li>
+            <strong>跨文化沟通流程熟悉</strong>
+            在处理中俄双方业务往来的过程中，深入了解国际化远程办公环境下的沟通节奏与文化差异处理方式
+          </li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading brown-heading"><span>核心收获</span></h2>
+        <p class="detail-p">这段经历将在校期间积累的三语能力与本地人脉资源转化为实际业务价值，也验证了跨文化协同能力不仅停留在学术层面，而是可以真实落地到商业场景中。结合此前个人跨境交易的实战经验，对国际贸易的完整链路有了更立体的认知。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 仇一妃 · 工商管理硕士</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.detail-section').forEach((el, i) => {
+      el.classList.add('fade-up');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

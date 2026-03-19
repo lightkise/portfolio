@@ -10,7 +10,7 @@
 <body>
 
   <nav class="navbar">
-    <div class="nav-logo">仇一妃</div>
+    <div class="nav-logo">个人简历</div>
     <ul class="nav-links">
       <li><a href="#education">教育经历</a></li>
       <li><a href="#internship">实习经历</a></li>
@@ -34,11 +34,20 @@
         <span>商业敏锐度</span>
         <span>数字化思维</span>
         <span>Owner 意识</span>
+        <span>AI 工具赋能</span>
       </div>
     </div>
     <div class="hero-deco">
-      <div class="avatar-frame">
-        <img src="images/avatar.jpg" alt="仇一妃" />
+      <div class="carousel-stage" id="carouselStage">
+        <div class="c-card" id="c0">
+          <img src="images/avatar-1.jpg" alt="仇一妃" />
+        </div>
+        <div class="c-card" id="c1">
+          <img src="images/avatar-2.jpg" alt="仇一妃" />
+        </div>
+        <div class="c-card" id="c2">
+          <img src="images/avatar-3.jpg" alt="仇一妃" />
+        </div>
       </div>
     </div>
   </section>
@@ -212,56 +221,143 @@
   <section class="section" id="skills">
     <div class="section-inner">
       <h2 class="section-title">专业技能</h2>
-      <div class="skills-tags-grid">
+      <div class="skills-vertical">
 
-        <div class="skill-group">
-          <div class="skill-group-title">🌐 语言能力</div>
-          <div class="tags-cloud">
-            <span class="tag tag-blue">英语 CET-6</span>
-            <span class="tag tag-blue">英语学术写作</span>
-            <span class="tag tag-blue">俄语 A2</span>
-            <span class="tag tag-blue">中英俄三语办公</span>
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">🌐 语言能力</div>
+            <div class="skill-row-en">Language</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-blue">英语 CET-6</span>
+              <span class="tag tag-blue">英语学术写作</span>
+              <span class="tag tag-blue">俄语 A2</span>
+              <span class="tag tag-blue">中英俄三语办公</span>
+            </div>
           </div>
         </div>
 
-        <div class="skill-group">
-          <div class="skill-group-title">💻 办公技能</div>
-          <div class="tags-cloud">
-            <span class="tag tag-teal">Office 精通</span>
-            <span class="tag tag-teal">Power BI</span>
-            <span class="tag tag-teal">xMind 精通</span>
-            <span class="tag tag-teal">Notion</span>
-            <span class="tag tag-teal">问卷设计</span>
-            <span class="tag tag-teal">CANVA</span>
-            <span class="tag tag-teal">PS</span>
-            <span class="tag tag-teal">PR</span>
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">💻 办公技能</div>
+            <div class="skill-row-en">Office Tools</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-teal">Office 精通</span>
+              <span class="tag tag-teal">Power BI</span>
+              <span class="tag tag-teal">xMind 精通</span>
+              <span class="tag tag-teal">Notion</span>
+              <span class="tag tag-teal skill-tag-work" data-target="card-survey" id="tag-survey">问卷设计 📷</span>
+              <span class="tag tag-teal skill-tag-work" data-target="card-ppt" id="tag-ppt">PPT 制作 📷</span>
+              <span class="tag tag-teal">CANVA</span>
+              <span class="tag tag-teal">PS</span>
+              <span class="tag tag-teal">PR</span>
+            </div>
+            <div class="skill-works" id="works-office">
+              <div class="skill-work-card" id="card-survey" onclick="openSkillLightbox('images/skill-survey.jpg')">
+                <div class="skill-work-preview" style="background:#E1F5EE;">📋</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#0F6E56;">问卷设计</div>
+                  <div class="skill-work-desc">硕士论文定量调研问卷</div>
+                  <div class="skill-work-view" style="color:#0F6E56;">查看作品 →</div>
+                </div>
+              </div>
+              <div class="skill-work-card" id="card-ppt" onclick="openSkillLightbox('images/skill-ppt.jpg')">
+                <div class="skill-work-preview" style="background:#E1F5EE;">🎨</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#0F6E56;">PPT 制作</div>
+                  <div class="skill-work-desc">7个国际非营利组织案例</div>
+                  <div class="skill-work-view" style="color:#0F6E56;">查看作品 →</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="skill-group">
-          <div class="skill-group-title">📊 专业理论</div>
-          <div class="tags-cloud">
-            <span class="tag tag-amber">人力资源六大模块</span>
-            <span class="tag tag-amber">市场分析</span>
-            <span class="tag tag-amber">战略分析</span>
-            <span class="tag tag-amber">管理咨询</span>
-            <span class="tag tag-amber">项目管理</span>
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">📊 专业理论</div>
+            <div class="skill-row-en">Theory</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-amber">人力资源六大模块</span>
+              <span class="tag tag-amber">市场分析</span>
+              <span class="tag tag-amber">战略分析</span>
+              <span class="tag tag-amber">管理咨询</span>
+              <span class="tag tag-amber">项目管理</span>
+            </div>
           </div>
         </div>
 
-        <div class="skill-group">
-          <div class="skill-group-title">🔍 分析模型</div>
-          <div class="tags-cloud">
-            <span class="tag tag-purple">PEST</span>
-            <span class="tag tag-purple">4P</span>
-            <span class="tag tag-purple">波特五力</span>
-            <span class="tag tag-purple">BSC</span>
-            <span class="tag tag-purple">蓝海战略</span>
-            <span class="tag tag-purple">甘特图</span>
-            <span class="tag tag-purple">PDCA</span>
-            <span class="tag tag-purple">COSO</span>
-            <span class="tag tag-purple">胜任力模型</span>
-            <span class="tag tag-purple">人才画像</span>
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">🔍 分析模型</div>
+            <div class="skill-row-en">Models</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-purple">PEST</span>
+              <span class="tag tag-purple">4P</span>
+              <span class="tag tag-purple skill-tag-work" data-target="card-porter" id="tag-porter">波特五力 📷</span>
+              <span class="tag tag-purple">BSC</span>
+              <span class="tag tag-purple skill-tag-work" data-target="card-blueocean" id="tag-blueocean">蓝海战略 📷</span>
+              <span class="tag tag-purple skill-tag-work" data-target="card-gantt" id="tag-gantt">甘特图 📷</span>
+              <span class="tag tag-purple">PDCA</span>
+              <span class="tag tag-purple">COSO</span>
+              <span class="tag tag-purple">胜任力模型</span>
+              <span class="tag tag-purple">人才画像</span>
+            </div>
+            <div class="skill-works">
+              <div class="skill-work-card" id="card-gantt" onclick="openSkillLightbox('images/skill-gantt.jpg')">
+                <div class="skill-work-preview" style="background:#EEEDFE;">📅</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#534AB7;">甘特图</div>
+                  <div class="skill-work-desc">项目管理课程作业</div>
+                  <div class="skill-work-view" style="color:#534AB7;">查看作品 →</div>
+                </div>
+              </div>
+              <div class="skill-work-card" id="card-porter" onclick="openSkillLightbox('images/skill-model-porter.jpg')">
+                <div class="skill-work-preview" style="background:#EEEDFE;">⚔️</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#534AB7;">波特五力分析</div>
+                  <div class="skill-work-desc">课程作业实战应用</div>
+                  <div class="skill-work-view" style="color:#534AB7;">查看作品 →</div>
+                </div>
+              </div>
+              <div class="skill-work-card" id="card-blueocean" onclick="openSkillLightbox('images/skill-model-blueocean.jpg')">
+                <div class="skill-work-preview" style="background:#EEEDFE;">🌊</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#534AB7;">蓝海战略</div>
+                  <div class="skill-work-desc">课程作业实战应用</div>
+                  <div class="skill-work-view" style="color:#534AB7;">查看作品 →</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">🚀 AI 赋能</div>
+            <div class="skill-row-en">AI Tools</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-teal skill-tag-work" data-target="card-ai" id="tag-ai">VS Code · Claude · GitHub 📷</span>
+            </div>
+            <div class="skill-works">
+              <div class="skill-work-card" id="card-ai" onclick="openSkillLightbox('images/skill-ai.jpg')">
+                <div class="skill-work-preview" style="background:#E1F5EE;">🚀</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#0F6E56;">个人作品集网站</div>
+                  <div class="skill-work-desc">零基础文科生 · AI 赋能独立开发</div>
+                  <div class="skill-work-view" style="color:#0F6E56;">查看作品 →</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -333,6 +429,45 @@
     <p>© 2025 仇一妃 · 工商管理硕士</p>
   </footer>
 
+  <!-- 技能灯箱 -->
+  <div class="skill-lightbox" id="skill-lightbox" onclick="closeSkillLightbox()">
+    <div class="skill-lightbox-close" onclick="closeSkillLightbox()">✕</div>
+    <div class="skill-lightbox-inner" onclick="event.stopPropagation()">
+      <img id="skill-lightbox-img" src="" alt="" />
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script>
+    // 技能标签联动
+    document.querySelectorAll('.skill-tag-work').forEach(tag => {
+      const targetId = tag.dataset.target;
+      const card = document.getElementById(targetId);
+      tag.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.skill-work-card').forEach(c => c.classList.remove('highlighted'));
+        document.querySelectorAll('.skill-tag-work').forEach(t => t.classList.remove('active'));
+        if (card) card.classList.add('highlighted');
+        tag.classList.add('active');
+      });
+      tag.addEventListener('mouseleave', () => {
+        if (card) card.classList.remove('highlighted');
+        tag.classList.remove('active');
+      });
+    });
+
+    // 技能灯箱
+    function openSkillLightbox(src) {
+      document.getElementById('skill-lightbox-img').src = src;
+      document.getElementById('skill-lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeSkillLightbox() {
+      document.getElementById('skill-lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeSkillLightbox();
+    });
+  </script>
 </body>
 </html>

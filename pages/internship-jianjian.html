@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中健健身 · 仇一妃</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">← 个人简历</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#internship">实习经历</a></li>
+      <li><a href="../index.html#projects">项目经历</a></li>
+      <li><a href="../index.html#contact">联系我</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-hero bg-light">
+    <div class="detail-hero-inner">
+      <div class="detail-tag-row">
+        <span class="exp-tag tag-amber">数据运营</span>
+        <span class="exp-date">2019.02 — 2019.05</span>
+      </div>
+      <h1>中健健身集团有限公司</h1>
+      <p class="detail-sub">经理助理 · 实习</p>
+      <div class="project-banner">
+        <span class="project-banner-label" style="display:none;"></span>
+        <h2 class="project-banner-title">体验课项目</h2>
+        <p class="project-banner-role">角色：流程设计与客户管理负责人</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-inner">
+
+      <div class="detail-section">
+        <h2 class="section-heading"><span>涉及技能</span></h2>
+        <div class="badge-row">
+          <span class="badge">Excel 数据分析</span>
+          <span class="badge">SOP 制定</span>
+          <span class="badge">甘特图</span>
+          <span class="badge">跨部门协同</span>
+          <span class="badge">L&D 培训</span>
+          <span class="badge">客户管理</span>
+          <span class="badge">数据看板</span>
+          <span class="badge">流程优化</span>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading"><span>项目背景</span></h2>
+        <p class="detail-p">针对门店客户转化率痛点，设计并落地一套可复制、可量化的体验课 SOP 方案，旨在提升会员转化效率、降低运营成本，支撑业务部门业绩达成。</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading"><span>核心职责</span></h2>
+        <ul class="detail-list">
+          <li>
+            <strong>流程标准化（SOP）建设</strong>
+            主导制定"预约-签到-反馈"全链路 SOP，利用 Excel 搭建可视化看板进行异常节点监控，将人工核对成本降低 40%
+          </li>
+          <li>
+            <strong>数据驱动决策</strong>
+            分析 2000+ 会员消费数据与偏好，分析到课率、转化率及满意度数据，动态优化课程排期策略，提升销售端转化效能
+          </li>
+          <li>
+            <strong>跨部门协同与资源调度</strong>
+            协调市场部、教练团队及客服部门，每日精准匹配 10+ 场次课程资源，确保组织内部资源高效流转与项目落地
+          </li>
+          <li>
+            <strong>会议与任务管理</strong>
+            应用甘特图持续跟踪 20+ 场周度会议关键任务执行，确保各节点按时推进
+          </li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading"><span>量化成果</span></h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-num">40%</div>
+            <div class="metric-label">人工核对成本降低</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">200+</div>
+            <div class="metric-label">新增潜在客户</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">15%</div>
+            <div class="metric-label">关键客户留存</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">100万</div>
+            <div class="metric-label">支撑月度业绩达成</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading"><span>个人感悟</span></h2>
+        <p class="detail-p">这段经历让我深刻理解了「用数据说话」的重要性——流程标准化不仅是效率工具，更是连接各部门协作的语言。从零搭建 SOP 体系的过程，培养了我对业务全链路的系统性思考，也坚定了我以数据驱动决策的工作方法论。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 仇一妃 · 工商管理硕士</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.detail-section, .metric-card').forEach((el, i) => {
+      el.classList.add('fade-up');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      observer.observe(el);
+    });
+
+    const counters = document.querySelectorAll('.metric-num');
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const text = el.textContent;
+          const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+          const suffix = text.replace(/[0-9.]/g, '');
+          if (!isNaN(num) && num > 0) {
+            let current = 0;
+            const step = num / 40;
+            const timer = setInterval(() => {
+              current = Math.min(current + step, num);
+              el.textContent = (Number.isInteger(num) ? Math.round(current) : current.toFixed(1)) + suffix;
+              if (current >= num) clearInterval(timer);
+            }, 30);
+          }
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+  </script>
+
+</body>
+</html>

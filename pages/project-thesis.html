@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生态议程实证分析 · 仇一妃</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link rel="stylesheet" href="../css/detail-purple.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">← 个人简历</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#internship">实习经历</a></li>
+      <li><a href="../index.html#projects">项目经历</a></li>
+      <li><a href="../index.html#contact">联系我</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-hero bg-light">
+    <div class="detail-hero-inner">
+      <div class="detail-tag-row">
+        <span class="exp-tag tag-purple">科研项目</span>
+        <span class="exp-date">2025.01 — 2025.03</span>
+      </div>
+      <h1>现代经济生态议程实证分析</h1>
+      <p class="detail-sub purple-sub">独立项目负责人 · 优秀毕业论文</p>
+      <div class="project-banner purple-banner">
+        <h2 class="project-banner-title">管理者价值观转变的重要性</h2>
+        <p class="project-banner-role">莫斯科国立大学 · 硕士毕业论文 · 优秀毕业生 Top 1%</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-inner">
+
+      <div class="detail-section">
+        <h2 class="section-heading purple-heading"><span>涉及技能</span></h2>
+        <div class="badge-row">
+          <span class="badge">定量研究</span>
+          <span class="badge">问卷设计</span>
+          <span class="badge">数据清洗</span>
+          <span class="badge">统计分析</span>
+          <span class="badge">相关性分析</span>
+          <span class="badge">学术写作</span>
+          <span class="badge">PPT呈现</span>
+          <span class="badge">答辩汇报</span>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading purple-heading"><span>研究背景</span></h2>
+        <p class="detail-p">在全球可持续发展议题持续升温的背景下，本研究聚焦于现代经济发展中的生态议程，探讨管理者价值观的转变对企业落地生态政策的驱动作用。研究方向与在俄罗斯战略倡议署（ASI）的实习经历形成深度呼应，学术研究与组织实践互相印证。</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading purple-heading"><span>研究过程</span></h2>
+        <ul class="detail-list">
+          <li>
+            <strong>问卷设计与数据采集</strong>
+            独立设计定量调研问卷，针对 300+ 样本开展调研，覆盖不同行业背景的管理者群体
+          </li>
+          <li>
+            <strong>数据清洗与处理</strong>
+            对原始数据进行完整性检查与清洗，确保数据质量，为后续统计分析提供可靠基础
+          </li>
+          <li>
+            <strong>统计分析与建模</strong>
+            运用统计软件进行相关性分析及归因分析，量化识别管理者价值观转变的驱动因素与客观障碍
+          </li>
+          <li>
+            <strong>核心结论</strong>
+            管理者转型驱动因素相关系数达 <strong>0.744</strong>，研究成果获评优秀毕业论文
+          </li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading purple-heading"><span>量化成果</span></h2>
+        <div class="metrics-grid">
+          <div class="metric-card purple-metric">
+            <div class="metric-num">300+</div>
+            <div class="metric-label">有效调研样本</div>
+          </div>
+          <div class="metric-card purple-metric">
+            <div class="metric-num">0.744</div>
+            <div class="metric-label">关键相关系数</div>
+          </div>
+          <div class="metric-card purple-metric">
+            <div class="metric-num">5分</div>
+            <div class="metric-label">优秀毕业论文</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="section-heading purple-heading"><span>答辩 PPT 展示</span></h2>
+        <p class="detail-p" style="margin-bottom:1.2rem;">共 18 页，点击图片可放大查看，左右箭头翻页</p>
+
+        <div class="ppt-viewer">
+          <div class="ppt-main">
+            <button class="ppt-btn ppt-prev" onclick="changePPT(-1)">‹</button>
+            <div class="ppt-img-wrap" onclick="openLightbox()">
+              <img id="ppt-current" src="../images/thesis-ppt-1.jpg" alt="答辩PPT" />
+              <div class="ppt-zoom-hint">点击放大</div>
+            </div>
+            <button class="ppt-btn ppt-next" onclick="changePPT(1)">›</button>
+          </div>
+          <div class="ppt-counter">
+            <span id="ppt-index">1</span> / 18
+          </div>
+          <div class="ppt-thumbs" id="ppt-thumbs"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 放大灯箱 -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-close">✕</div>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 仇一妃 · 工商管理硕士</p>
+  </footer>
+
+  <script>
+    const total = 18;
+    let current = 1;
+
+    // 生成缩略图
+    const thumbs = document.getElementById('ppt-thumbs');
+    for (let i = 1; i <= total; i++) {
+      const img = document.createElement('img');
+      img.src = `../images/thesis-ppt-${i}.jpg`;
+      img.alt = `第${i}页`;
+      img.className = i === 1 ? 'active' : '';
+      img.onclick = () => goTo(i);
+      thumbs.appendChild(img);
+    }
+
+    function goTo(n) {
+      current = n;
+      document.getElementById('ppt-current').src = `../images/thesis-ppt-${n}.jpg`;
+      document.getElementById('ppt-index').textContent = n;
+      document.querySelectorAll('.ppt-thumbs img').forEach((img, i) => {
+        img.className = i + 1 === n ? 'active' : '';
+      });
+      // 缩略图滚动到对应位置
+      const activeThumb = thumbs.children[n - 1];
+      activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    function changePPT(dir) {
+      let next = current + dir;
+      if (next < 1) next = total;
+      if (next > total) next = 1;
+      goTo(next);
+    }
+
+    function openLightbox() {
+      document.getElementById('lightbox-img').src = `../images/thesis-ppt-${current}.jpg`;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') changePPT(-1);
+      if (e.key === 'ArrowRight') changePPT(1);
+    });
+
+    // 滚动动画
+    document.querySelectorAll('.detail-section, .metric-card').forEach((el, i) => {
+      el.classList.add('fade-up');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      observer.observe(el);
+    });
+
+    const counters = document.querySelectorAll('.metric-num');
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const text = el.textContent;
+          const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+          const suffix = text.replace(/[0-9.]/g, '');
+          if (!isNaN(num) && num > 0) {
+            let current = 0;
+            const step = num / 40;
+            const timer = setInterval(() => {
+              current = Math.min(current + step, num);
+              el.textContent = (Number.isInteger(num) ? Math.round(current) : current.toFixed(3)) + suffix;
+              if (current >= num) clearInterval(timer);
+            }, 30);
+          }
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+  </script>
+
+</body>
+</html>
