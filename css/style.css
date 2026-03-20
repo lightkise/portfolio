@@ -248,3 +248,68 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 @media (max-width: 768px) {
   .edu-item { grid-template-columns: 1fr; gap: 0.5rem; }
 }
+
+/* ===== 手机端适配 ===== */
+@media (max-width: 768px) {
+
+  /* 1. 导航栏 */
+  .nav-links {
+    gap: 0.8rem;
+  }
+  .nav-links a {
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  /* 2. Hero 区照片显示 */
+  .hero-deco {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .carousel-stage {
+    width: 320px;
+    height: 280px;
+  }
+
+  .c-card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  /* 3. 技能标签和卡片自动换行 */
+  .tags-cloud {
+    flex-wrap: wrap;
+  }
+
+  .skill-works {
+    flex-wrap: wrap;
+  }
+
+  .skill-work-card {
+    width: 130px;
+    max-width: 130px;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+}
