@@ -52,24 +52,19 @@
     </div>
   </section>
 
-  <!-- 教育经历：手风琴 -->
+  <!-- 教育经历 -->
   <section class="section bg-light" id="education">
     <div class="section-inner">
       <h2 class="section-title">教育经历</h2>
-      <div class="accordion">
+      <div class="edu-list">
 
-        <div class="acc-item">
-          <div class="acc-header">
-            <div class="acc-left">
-              <span class="acc-date">2023.09 — 2025.06</span>
-              <div class="acc-title-wrap">
-                <h3>莫斯科国立大学</h3>
-                <p class="acc-sub">公共和企业的人力资本发展（英语授课）· 工商管理硕士</p>
-              </div>
-            </div>
-            <span class="acc-arrow">▼</span>
+        <div class="edu-item">
+          <div class="edu-left">
+            <span class="edu-date">2023.09 — 2025.06</span>
           </div>
-          <div class="acc-body">
+          <div class="edu-right">
+            <h3>莫斯科国立大学</h3>
+            <p class="edu-sub">公共和企业的人力资本发展（英语授课）· 工商管理硕士</p>
             <ul class="detail-list">
               <li>🏆 校级荣誉：优秀毕业生（Top 1%）；校级学术会议荣誉证书</li>
               <li>📌 研究方向："现代经济发展的生态议程：管理者价值观转变的重要性"</li>
@@ -78,18 +73,13 @@
           </div>
         </div>
 
-        <div class="acc-item">
-          <div class="acc-header">
-            <div class="acc-left">
-              <span class="acc-date">2015.09 — 2019.06</span>
-              <div class="acc-title-wrap">
-                <h3>山东财经大学</h3>
-                <p class="acc-sub">体育经济与管理 · 管理学学士</p>
-              </div>
-            </div>
-            <span class="acc-arrow">▼</span>
+        <div class="edu-item">
+          <div class="edu-left">
+            <span class="edu-date">2015.09 — 2019.06</span>
           </div>
-          <div class="acc-body">
+          <div class="edu-right">
+            <h3>山东财经大学</h3>
+            <p class="edu-sub">体育经济与管理 · 管理学学士</p>
             <ul class="detail-list">
               <li>📣 社团经历：校级社团宣传部副部长</li>
               <li>📚 相关课程：管理学、经济法、企业战略管理、市场营销</li>
@@ -363,6 +353,73 @@
 
       </div>
 
+      <h2 class="section-title" style="margin-top:4rem;">其他经历</h2>
+      <div class="skills-vertical">
+
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">📱 自媒体与商业</div>
+            <div class="skill-row-en">Social & Business</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-blue skill-tag-work" data-target="card-bilibili" id="tag-bilibili">B站单条视频 10W+ 📷</span>
+              <span class="tag tag-blue skill-tag-work" data-target="card-xianyu" id="tag-xianyu">闲鱼成交 30+ 笔 · 100% 好评 📷</span>
+            </div>
+            <div class="skill-works">
+              <div class="skill-work-card" id="card-bilibili" onclick="openSkillLightbox('images/other-bilibili.jpg')">
+                <div class="skill-work-preview" style="background:#e8f0fe;">📺</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#185FA5;">B站视频</div>
+                  <div class="skill-work-desc">单条 10W+ 播放量截图</div>
+                  <div class="skill-work-view" style="color:#185FA5;">查看截图 →</div>
+                </div>
+              </div>
+              <div class="skill-work-card" id="card-xianyu" onclick="openSkillLightbox('images/other-xianyu.jpg')">
+                <div class="skill-work-preview" style="background:#e8f0fe;">🛍️</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#185FA5;">闲鱼店铺</div>
+                  <div class="skill-work-desc">成交记录与好评截图</div>
+                  <div class="skill-work-view" style="color:#185FA5;">查看截图 →</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-row-label">
+            <div class="skill-row-title">🎨 创意与自驱力</div>
+            <div class="skill-row-en">Creative</div>
+          </div>
+          <div class="skill-row-content">
+            <div class="tags-cloud">
+              <span class="tag tag-amber skill-tag-work" data-target="card-skin" id="tag-skin">游戏皮肤设计 · 获 500+ 赞 📷</span>
+              <span class="tag tag-amber skill-tag-work" data-target="card-drawing" id="tag-drawing">60天绘画自律挑战 📷</span>
+            </div>
+            <div class="skill-works">
+              <div class="skill-work-card" id="card-skin" onclick="openSkillLightbox('images/other-skin.jpg')">
+                <div class="skill-work-preview" style="background:#FAEEDA;">🎮</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#854F0B;">游戏皮肤设计</div>
+                  <div class="skill-work-desc">获 500+ 赞设计作品</div>
+                  <div class="skill-work-view" style="color:#854F0B;">查看作品 →</div>
+                </div>
+              </div>
+              <div class="skill-work-card" id="card-drawing" onclick="openSkillLightbox('images/other-drawing.jpg')">
+                <div class="skill-work-preview" style="background:#FAEEDA;">✏️</div>
+                <div class="skill-work-info">
+                  <div class="skill-work-name" style="color:#854F0B;">60天绘画挑战</div>
+                  <div class="skill-work-desc">自律打卡记录</div>
+                  <div class="skill-work-view" style="color:#854F0B;">查看作品 →</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <h2 class="section-title" style="margin-top:4rem;">核心优势</h2>
       <div class="advantage-list">
         <div class="advantage-item">
@@ -390,28 +447,7 @@
     </div>
   </section>
 
-  <!-- 其他经历 -->
-  <section class="section bg-light" id="other">
-    <div class="section-inner">
-      <h2 class="section-title">其他经历</h2>
-      <div class="other-grid">
-        <div class="other-card">
-          <span class="other-icon">📱</span>
-          <div>
-            <strong>自媒体运营</strong>
-            <p>B站单条视频 10W+ 播放量；闲鱼店铺运营成交 30+ 笔且 100% 好评</p>
-          </div>
-        </div>
-        <div class="other-card">
-          <span class="other-icon">🎨</span>
-          <div>
-            <strong>创意与自驱力</strong>
-            <p>游戏皮肤设计获 500+ 赞；多次完成连续 60 天绘画打卡</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- 联系方式 -->
   <section class="section bg-dark" id="contact">

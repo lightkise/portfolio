@@ -222,3 +222,28 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
   opacity: 0.7; transition: opacity 0.2s; z-index: 1001;
 }
 .skill-lightbox-close:hover { opacity: 1; }
+/* 教育经历直接展开 */
+.edu-list { display: flex; flex-direction: column; gap: 2rem; }
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s;
+}
+
+.edu-item:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+
+.edu-left { padding-top: 4px; }
+.edu-date { font-size: 0.85rem; color: var(--gray); white-space: nowrap; }
+
+.edu-right h3 { font-size: 1.05rem; font-weight: 500; margin-bottom: 0.3rem; }
+.edu-sub { font-size: 0.85rem; color: var(--accent); margin-bottom: 0.8rem; }
+
+@media (max-width: 768px) {
+  .edu-item { grid-template-columns: 1fr; gap: 0.5rem; }
+}
