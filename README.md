@@ -2,6 +2,10 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://lightkise.github.io/portfolio)
 
+## 在线访问
+
+👉 [lightkise.github.io/portfolio](https://lightkise.github.io/portfolio)
+
 ## 技术栈
 
 ![HTML](https://img.shields.io/badge/HTML-67.1%25-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -32,6 +36,4 @@
 - CSS Grid 响应式布局 · 移动端触摸支持
 - GitHub Pages 静态托管 · 零成本上线
 
-## 在线访问
 
-👉 [lightkise.github.io/portfolio](https://lightkise.github.io/portfolio)
