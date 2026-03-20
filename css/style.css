@@ -178,10 +178,11 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .skill-tag-work:hover { border-color: currentColor; transform: translateY(-1px); }
 .skill-tag-work.active { border-color: currentColor; font-weight: 600; }
 
-.skill-works { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.skill-works { display: flex; flex-direction: row; gap: 0.8rem; align-items: flex-start; }
 
 .skill-work-card {
-  width: 140px; background: var(--white);
+  width: 140px; max-width: 140px; flex-shrink: 0;
+  background: var(--white);
   border: 1.5px solid var(--border); border-radius: var(--radius);
   overflow: hidden; cursor: pointer;
   transition: all 0.3s; opacity: 0.4;
